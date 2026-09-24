@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 bin/docet.py:*)",
+      "Bash(bin/render.sh:*)",
+      "Edit(vault/**)",
+      "Write(vault/**)"
+    ]
+  }
+}

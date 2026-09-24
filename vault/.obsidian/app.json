@@ -1,0 +1,9 @@
+{
+  "defaultViewMode": "preview",
+  "readableLineLength": true,
+  "showFrontmatter": false,
+  "propertiesInDocument": "hidden",
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "userIgnoreFilters": [".docet/"]
+}

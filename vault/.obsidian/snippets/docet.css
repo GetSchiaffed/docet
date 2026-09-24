@@ -1,0 +1,75 @@
+/* docet — reading style for lessons and course pages.
+   Uses theme variables only: works in light and dark mode. */
+
+/* --- page: studying means reading, so give it room and a measure -------- */
+.docet, .docet-course {
+  --file-line-width: 44rem;
+  --line-height-normal: 1.7;
+  --p-spacing: 1.1rem;
+}
+.docet .markdown-preview-view,
+.markdown-preview-view.docet {
+  font-size: 1.06em;
+}
+.docet h1, .docet-course h1 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.2em;
+}
+.docet h2 {
+  margin-top: 2.4em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+.docet h3 { margin-top: 1.8em; }
+
+/* the "← course" link at the top */
+.docet h1 + p a.internal-link {
+  font-size: 0.85em;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+/* display math slightly larger, no horizontal page scroll on mobile */
+.docet .math-block {
+  font-size: 1.08em;
+  overflow-x: auto;
+  padding: 0.3em 0;
+}
+
+/* centred diagrams */
+.docet .mermaid, .docet-course .mermaid {
+  display: flex;
+  justify-content: center;
+  margin: 1.2em 0;
+}
+
+/* --- callout ------------------------------------------------------------ */
+.callout[data-callout="quiz"] {
+  --callout-color: 94, 106, 210;
+  --callout-icon: lucide-help-circle;
+  border-left-width: 4px;
+  padding: 0.9em 1.1em;
+}
+.callout[data-callout="quiz"] .callout-title {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.callout[data-callout="quiz"] .callout-content strong {
+  display: inline-block;
+  min-width: 1.4em;
+  color: rgb(var(--callout-color));
+}
+.callout[data-callout="quiz"] .callout-content p {
+  margin: 0.45em 0;
+}
+
+.callout[data-callout="success"] { --callout-color: 46, 125, 50; }
+.callout[data-callout="failure"] { --callout-color: 198, 40, 40; }
+.callout[data-callout="abstract"] { --callout-color: 96, 125, 139; }
+
+/* --- course pages --------------------------------------------------------- */
+.docet-course table { font-size: 0.92em; }
+.docet-course code { letter-spacing: -0.05em; }
+.docet-course li { margin: 0.2em 0; }

@@ -1,0 +1,18 @@
+# The vault belongs to the learner: lessons, tests, state, answers. Not versioned.
+# Only the Obsidian config that styles the lessons is.
+/vault/*
+!/vault/.obsidian/
+/vault/.obsidian/*
+!/vault/.obsidian/app.json
+!/vault/.obsidian/appearance.json
+!/vault/.obsidian/core-plugins.json
+!/vault/.obsidian/snippets/
+
+# Personal Claude Code instructions
+/CLAUDE.local.md
+/.claude/settings.local.json
+
+# OS / Python
+.DS_Store
+__pycache__/
+*.pyc
